@@ -40,8 +40,8 @@
 <p>The code for the Flask application can be found <a href="app.py">here</a>, and the HTML template can be found <a href="templates/index.html">here</a>.</p>
 
 <p>Here is the final application:</p>
-<img src="FinalApplication_1">
-<img src="FinalApplication_2">
+<img src="FinalApplication_1.png">
+<img src="FinalApplication_2.png">
 
 ### Submission Requirements
 * Jupyter notebook with scraping code
