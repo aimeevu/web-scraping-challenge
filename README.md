@@ -10,17 +10,38 @@
 
 * <a href="https://redplanetscience.com/">NASA Mars News</a>
     - Collect the latest News Title and Paragraph Text
+
+<img src="MarsNews.png">
+
 * <a href="https://spaceimages-mars.com/">JPL Marks Space Images-Featured Image</a>
     - Save complete URL string for the featured image
+
+<img src="FeaturedImageURL.png">
+
 * <a href="https://galaxyfacts-mars.com/">Mars Facts</a>
     - Collect table containing facts about Mars
+
+<img src="MarsFacts.png">
+
 * <a href="https://marshemispheres.com/">Mars Hemispheres</a>
     - Save image URLs for each hemisphere, including the title
 
+<img src="HemisphereList.png">
 
+<p>The code for the scraping script can be found <a href="MissionToMars.ipynb">here</a>.</p>
 
 <h1>Part 2: MongoDB and Flask Application</h1>
+<p>Once the script works in Jupyter, it is then copied into a Python file in order for the script to be used by the Flask application. This code can be found in <a href="scrape_mars.py">scrape_mars.py</a></p>
 
+<p>The Flask application will then call to the scraping script in order to load and display the data in the browser. At the same time, the data is loaded into a MongoDB database named marsDataDB, collection marsData.</p>
+
+<p>Additionally, an HTML template that utilizes Bootstrap is called into the Flask application in order to properly display the data.</p>
+
+<p>The code for the Flask application can be found <a href="app.py">here</a>, and the HTML template can be found <a href="templates/index.html">here</a>.</p>
+
+<p>Here is the final application:</p>
+<img src="FinalApplication_1">
+<img src="FinalApplication_2">
 
 ### Submission Requirements
 * Jupyter notebook with scraping code
