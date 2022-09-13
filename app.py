@@ -13,7 +13,8 @@ mongo = PyMongo(app)
 @app.route("/")
 def index():
     marsData = mongo.db.marsData.find_one()
-    return json.loads(json_util.dumps(marsData))
+    # return json.loads(json_util.dumps(marsData))
+    return render_template("index.html", mars=marsData)
 
 @app.route("/scrape")
 def scrape():
